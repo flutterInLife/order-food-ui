@@ -1,6 +1,6 @@
-import 'package:UI_FOOD_ORDER/design-from-xd-plugin.dart';
-import 'package:UI_FOOD_ORDER/order-food-ui-1.dart';
 import 'package:flutter/material.dart';
+
+import 'order-food-ui-1.dart';
 
 void main() {
   runApp(MaterialApp(
