@@ -1,4 +1,5 @@
 import 'package:UI_FOOD_ORDER/item-container.dart';
+import 'package:UI_FOOD_ORDER/page2/page2.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -179,32 +180,33 @@ class Design1 extends StatelessWidget {
                     Text(
                       'Popular Ordering',
                       style: GoogleFonts.montserrat(
-                        textStyle: TextStyle(
-                          fontSize: 11,
-                          color: Color(0xff231F20).withOpacity(0.2)
-                        )
-                      ),
+                          textStyle: TextStyle(
+                              fontSize: 11,
+                              color: Color(0xff231F20).withOpacity(0.2))),
                     ),
                     Text(
-                        'View All',
+                      'View All',
                       style: GoogleFonts.montserrat(
                           textStyle: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w700,
-                              color: Color(0xffD6C70D)
-                          )
-                      ),
+                              color: Color(0xffD6C70D))),
                     )
                   ],
                 ),
               ),
               Container(
-                height: 99.71+37.2,
+                height: 99.71 + 37.2,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
-                  padding: EdgeInsets.only(left: 34, right: 34,top: 8.0, bottom: 37.2),
+                  padding: EdgeInsets.only(
+                      left: 34, right: 34, top: 8.0, bottom: 37.2),
                   children: [
                     ItemContainer(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Page2()));
+                      },
                       height: 99.71,
                       width: 99.71,
                       color: Color(0xffffffff),
@@ -213,8 +215,14 @@ class Design1 extends StatelessWidget {
                       text: 'Coffee',
                       textWeight: FontWeight.w500,
                     ),
-                    SizedBox(width: 10,),
+                    SizedBox(
+                      width: 10,
+                    ),
                     ItemContainer(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Page2()));
+                      },
                       height: 99.71,
                       width: 99.71,
                       color: Color(0xffffffff),
@@ -223,8 +231,14 @@ class Design1 extends StatelessWidget {
                       text: 'Spicy Food',
                       textWeight: FontWeight.w500,
                     ),
-                    SizedBox(width: 10,),
+                    SizedBox(
+                      width: 10,
+                    ),
                     ItemContainer(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Page2()));
+                      },
                       height: 99.71,
                       width: 99.71,
                       color: Color(0xffffffff),
@@ -233,8 +247,14 @@ class Design1 extends StatelessWidget {
                       text: 'Steak',
                       textWeight: FontWeight.w500,
                     ),
-                    SizedBox(width: 10,),
+                    SizedBox(
+                      width: 10,
+                    ),
                     ItemContainer(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Page2()));
+                      },
                       height: 99.71,
                       width: 99.71,
                       color: Color(0xffffffff),
@@ -254,32 +274,33 @@ class Design1 extends StatelessWidget {
                     Text(
                       'New Recipe',
                       style: GoogleFonts.montserrat(
-                        textStyle: TextStyle(
-                          fontSize: 11,
-                          color: Color(0xff231F20).withOpacity(0.2)
-                        )
-                      ),
+                          textStyle: TextStyle(
+                              fontSize: 11,
+                              color: Color(0xff231F20).withOpacity(0.2))),
                     ),
                     Text(
-                        'View All',
+                      'View All',
                       style: GoogleFonts.montserrat(
                           textStyle: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w700,
-                              color: Color(0xffD6C70D)
-                          )
-                      ),
+                              color: Color(0xffD6C70D))),
                     )
                   ],
                 ),
               ),
               Container(
-                height: 113.37+37.2,
+                height: 113.37 + 37.2,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
-                  padding: EdgeInsets.only(left: 34, right: 34,top: 8.0, bottom: 37.2),
+                  padding: EdgeInsets.only(
+                      left: 34, right: 34, top: 8.0, bottom: 37.2),
                   children: [
                     ItemContainer(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Page2()));
+                      },
                       height: 113.37,
                       width: 113.37,
                       color: Color(0xffDDB303),
@@ -288,8 +309,14 @@ class Design1 extends StatelessWidget {
                       text: 'Hamburgers',
                       textWeight: FontWeight.w600,
                     ),
-                    SizedBox(width: 10,),
+                    SizedBox(
+                      width: 10,
+                    ),
                     ItemContainer(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Page2()));
+                      },
                       height: 113.37,
                       width: 113.37,
                       color: Color(0xffCBC5BB),
@@ -298,13 +325,21 @@ class Design1 extends StatelessWidget {
                       text: 'Coffee Joy',
                       textWeight: FontWeight.w600,
                     ),
-                    SizedBox(width: 10,),
+                    SizedBox(
+                      width: 10,
+                    ),
                     ItemContainer(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Page2()));
+                      },
                       height: 113.37,
                       width: 113.37,
                       color: Color(0xffDC7503),
                       textColor: Color(0xffffffff),
-                      icon: SvgPicture.asset('assets/spicy-pasta.svg',),
+                      icon: SvgPicture.asset(
+                        'assets/spicy-pasta.svg',
+                      ),
                       text: 'Spicy Pasta',
                       textWeight: FontWeight.w600,
                     ),
@@ -319,46 +354,65 @@ class Design1 extends StatelessWidget {
                     Text(
                       'Best Latest Food',
                       style: GoogleFonts.montserrat(
-                        textStyle: TextStyle(
-                          fontSize: 11,
-                          color: Color(0xff231F20).withOpacity(0.2)
-                        )
-                      ),
+                          textStyle: TextStyle(
+                              fontSize: 11,
+                              color: Color(0xff231F20).withOpacity(0.2))),
                     ),
                     Text(
-                        'View All',
+                      'View All',
                       style: GoogleFonts.montserrat(
                           textStyle: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w700,
-                              color: Color(0xffD6C70D)
-                          )
-                      ),
+                              color: Color(0xffD6C70D))),
                     )
                   ],
                 ),
               ),
               Container(
-                height: 113.37+37.2,
+                height: 113.37 + 37.2,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
-                  padding: EdgeInsets.only(left: 34, right: 34,top: 8.0, bottom: 37.2),
+                  padding: EdgeInsets.only(
+                      left: 34, right: 34, top: 8.0, bottom: 37.2),
                   children: [
                     ItemContainer(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Page2()));
+                      },
                       height: 113.37,
                       width: 113.37,
                       color: Color(0xffCA0003),
-                      icon: SvgPicture.asset('assets/juice.svg', height: 80,),
+                      icon: SvgPicture.asset(
+                        'assets/juice.svg',
+                        height: 80,
+                      ),
                     ),
-                    SizedBox(width: 10,),
+                    SizedBox(
+                      width: 10,
+                    ),
                     ItemContainer(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Page2()));
+                      },
                       height: 113.37,
                       width: 113.37,
                       color: Color(0xffE78921),
-                      icon: SvgPicture.asset('assets/pizza.svg', height: 80,),
+                      icon: SvgPicture.asset(
+                        'assets/pizza.svg',
+                        height: 80,
+                      ),
                     ),
-                    SizedBox(width: 10,),
+                    SizedBox(
+                      width: 10,
+                    ),
                     ItemContainer(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Page2()));
+                      },
                       height: 113.37,
                       width: 113.37,
                       color: Color(0xffDC7503),

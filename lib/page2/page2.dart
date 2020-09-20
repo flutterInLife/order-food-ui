@@ -201,6 +201,7 @@ class Page2 extends StatelessWidget {
                     Align(
                       alignment: Alignment.centerLeft,
                       child: FloatingActionButton(
+                        heroTag: 'two',
                         onPressed: null,
                         child: Text(
                           '1',
@@ -212,6 +213,7 @@ class Page2 extends StatelessWidget {
                     Align(
                       alignment: Alignment.centerLeft,
                       child: FloatingActionButton(
+                        heroTag: 'three',
                         onPressed: null,
                         child: Icon(Icons.arrow_forward_ios),
                         backgroundColor: Colors.green,
@@ -220,7 +222,7 @@ class Page2 extends StatelessWidget {
                     Align(
                       alignment: Alignment.centerRight,
                       child: FloatingActionButton.extended(
-                        heroTag: 'two',
+                        heroTag: 'four',
                         onPressed: () {},
                         label: Text(
                           'Add Note',
@@ -257,7 +259,9 @@ class Page2 extends StatelessWidget {
                   end: Alignment.centerRight,
                   colors: [Color(0xffD4C300), Color(0xffAAA600)],
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pop(context);
+                },
               ),
             ],
           ),
