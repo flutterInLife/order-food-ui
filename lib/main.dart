@@ -1,8 +1,9 @@
-import 'package:UI_FOOD_ORDER/page2/page2.dart';
 import 'package:flutter/material.dart';
+
+import 'order-food-ui-1.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Page2(),
+    home: Design1(),
   ));
 }
