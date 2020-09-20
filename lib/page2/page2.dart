@@ -38,7 +38,7 @@ class Page2 extends StatelessWidget {
                               children: [
                                 SvgPicture.asset(
                                   'assets/back-button.svg',
-                                  color: Colors.amber,
+                                  color: Colors.grey,
                                 ),
                                 SizedBox(
                                   width: 24.9,
@@ -127,21 +127,31 @@ class Page2 extends StatelessWidget {
                   )
                 ],
               ),
-              ReuseCard(
-                cardChild: Align(
+              Stack(children: [
+                // Align(
+                //   alignment: Alignment.center,
+                //   child: ReuseCard(
+                //     cardChild: Row(),
+                //     height: 200,
+                //     colour: Color(0xFFE4E6E8),
+                //     onTap: () {},
+                //   ),
+                // ),
+                Align(
                   alignment: Alignment.topRight,
-                  child: SvgPicture.asset(
-                    'assets/greenCircle.svg',
-                    // alignment: Alignment.topRight,
-                    width: 150.0,
-                    // width: MediaQuery.of(context).size.width,
-                    // width: 100,
+                  child: Padding(
+                    padding: const EdgeInsets.only(right: 20, bottom: 15),
+                    child: SvgPicture.asset(
+                      'assets/Hamburger.svg',
+                      // alignment: Alignment.topRight,
+                      // width: 150.0,
+                      width: MediaQuery.of(context).size.width,
+                      height: 300,
+                      // width: 100,
+                    ),
                   ),
                 ),
-                height: 200,
-                colour: Color(0xFFE4E6E8),
-                onTap: () {},
-              ),
+              ]),
               ReuseCard(
                 colour: Colors.white,
                 cardChild: Column(
